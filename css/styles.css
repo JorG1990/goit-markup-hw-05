@@ -195,6 +195,7 @@ body{
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+    margin-bottom: 94px;
 }
 
 .card:nth-child(1){
@@ -378,15 +379,12 @@ h4 {
 }
 
 .card-2{
-    display: inline-block;
     width: 370px;
     height: 420px;
     margin-bottom: 30px;
-    overflow: hidden;
-	background:#FFFFFF;
-    box-sizing: border-box;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+	  background:#FFFFFF;
+	  border-radius: 0px 0px 4px 4px;
+    border: 1px solid #EEEEEE;
 }
 
 .card .contents-card{
@@ -405,6 +403,29 @@ h4 {
 
 .card-2:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-hover {
+  padding: 63px 24px;
+  top: 0;
+  position: absolute;
+  color: var(--white-color);
+  width: 370px;
+  height: 294px;
+  background: var(--blue-color);
+  letter-spacing: 0.03em;
+  transform: translateY(105%);
+  transition: tranform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-2:hover .card-hover {
+  transform: translateY(0%);
+}
+
+.image-card {
+  overflow: hidden;
+  position: relative;
 }
 
 .text {
