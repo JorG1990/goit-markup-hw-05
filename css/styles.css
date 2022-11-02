@@ -267,7 +267,6 @@ body{
     justify-content: space-between;
 }
 
-
 #buttons-center{
     display: inline-block;
     justify-content: center;
@@ -406,22 +405,22 @@ h4 {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.image-card:hover .card-hover {
+  transform: translateY(0%);
+}
+
 .card-hover {
   padding: 63px 24px;
   top: 0;
+  left: 0;
   position: absolute;
   color: var(--white-color);
   width: 370px;
   height: 294px;
-  background: var(--blue-color);
+  background: rgba(33, 150, 243, 0.9);;
   letter-spacing: 0.03em;
   transform: translateY(105%);
-  transition: tranform 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-2:hover .card-hover {
-  transform: translateY(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .image-card {
@@ -558,4 +557,37 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
+}
+
+.backdrop {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.exit_modal{
+  position: absolute;
+  right: 10px;
+  top: 17px;
 }

@@ -38,7 +38,7 @@
         <section class="cotainer">
     <div id="bg">
       <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-      <input class="button2" value="Solicite nuestro servicio">
+      <button data-modal-open class="button2" type="button">Solicite nuestro servicio</button>
     </div>
     <div class="contents">
       <div class="text">
@@ -259,5 +259,13 @@
     </div>
   </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close class="exit_modal">x</button>
+    </div>
+  </div>
+  <script src="/js/modal.js"></script>
+  
   </body>
 </html>
