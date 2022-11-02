@@ -47,7 +47,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
-   }
+}
 
 .header_navigation .item{
     display: flex;
@@ -138,7 +138,6 @@ body{
     border-bottom: var(--blue-color);
     border-bottom: 4px;
 }
-
 
 .item {
     display: inline-block;
@@ -340,7 +339,7 @@ h1 {
     text-transform: uppercase;
     width: 696px;
     height: 120px;
-    }
+}
 
 h2 {
     color: var(--black-color);
@@ -366,7 +365,7 @@ h3 {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
- }
+}
 
 h4 {
     color: var(--blue-color);
@@ -431,6 +430,7 @@ h4 {
 .text {
   margin-top: 82px;
 }
+
 .title-text{
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Roboto';
@@ -442,7 +442,7 @@ h4 {
 
     padding-left: -300px;
 
-    }
+}
 
 .title-text:hover{
     color: var(--blue-color);
@@ -485,6 +485,7 @@ h4 {
     box-sizing: border-box;
     border: 1px solid var(--blue-color);
 }
+
 .customers > .svgs:not(:last-child) {
     margin-right: 30px;
 }
@@ -510,10 +511,9 @@ footer {
 .information {
     display: inline;
     margin-right: 70px;
+}
 
- }
-
- /* h3 del portafolio (second-pages)*/
+/* h3 del portafolio (second-pages)*/
 .second-pages {
     font-family: 'Roboto';
     font-style: normal;
@@ -559,6 +559,7 @@ footer {
   display: flex;
 }
 
+/*ventanas modal*/
 .backdrop {
   position: fixed;
   background: rgba(0, 0, 0, 0.2);
