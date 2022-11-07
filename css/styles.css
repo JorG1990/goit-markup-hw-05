@@ -5,6 +5,8 @@
     --white-color: #FFFFFF;
     --gray-color: #757575;
     --green-color:  #148955;
+    --portrait-transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --modal-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -61,12 +63,14 @@ body{
 	text-decoration: underline;
     border-bottom: var(--blue-color);
     border-bottom: 4px;
+    transition: var(--portrait-transition);
 }
 
 .header_navigation .title-text1:hover{
 	text-decoration: underline;
     border-bottom: var(--blue-color);
     border-bottom: 4px;
+    transition: var(--portrait-transition);
 }
 
 .header_contact:hover * {
@@ -74,6 +78,7 @@ body{
     color: var(--blue-color);
     border-bottom: var(--blue-color);
     border-bottom: 4px;
+    transition: var(--portrait-transition);
 }
 
 .header_contact{
@@ -121,6 +126,7 @@ body{
 	color: var(--blue-color);
     border-bottom: var(--blue-color);
     border-bottom: 4px;
+    transition: var(--portrait-transition);
 }
 
 .link:active *{
@@ -236,6 +242,7 @@ body{
 .redes:hover, .redes:focus{
     background-color: var(--blue-color);
     fill: var(--white-color);
+    transition: var(--portrait-transition);
 }
 
 .redes-footer {
@@ -248,6 +255,7 @@ body{
 .redes-footer:hover, .redes-footer:focus {
     background-color: var(--blue-color);
     fill: var(--white-color);
+    transition: var(--portrait-transition);
 }
 
 .container-img1{
@@ -294,6 +302,7 @@ body{
 
 .title-text1:hover{
 	color: var(--blue-color);
+  transition: var(--portrait-transition);
 }
 
 .title-text1:active{
@@ -323,6 +332,7 @@ body{
 .button:hover{
     color: var(--white-color);
     background-color: var(--blue-color);
+    transition: var(--portrait-transition);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
@@ -408,6 +418,7 @@ h4 {
 }
 
 .card:hover{
+  transition: var(--portrait-transition);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -417,7 +428,8 @@ h4 {
 }
 
 .card-2:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: var(--portrait-transition);
+ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .image-card:hover .card-hover {
@@ -581,12 +593,17 @@ footer {
   background: rgba(47, 48, 58, 0.4);
   top: 0;
   left: 0;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:var(--modal-transition)
 }
+
 
 .backdrop.is-hidden {
   visibility: hidden;
